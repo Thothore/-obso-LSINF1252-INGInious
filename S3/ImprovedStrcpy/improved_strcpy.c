@@ -8,20 +8,20 @@
 */
 char *buf_strcpy(const char *src) 
 {
-  if(src==NULL)
+  if(src == NULL)
   {
       return NULL;
   }
   int i;
   int len = strlen(src);
-  char *dest = (char *) malloc((len+1)*sizeof(char));
-  if(dest==NULL)
+  char *dest = (char *) malloc((len + 1) * sizeof(char));
+  if(dest == NULL)
   {
       return NULL;
   }
-  for(i=0 ; i <= len ; i++)
+  for(i = 0 ; i <= len ; i++)
   {
-      *(dest+i) = *(src+i);
+      *(dest + i) = *(src + i);
   }
   return dest;
 }
